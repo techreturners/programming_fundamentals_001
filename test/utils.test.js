@@ -25,3 +25,9 @@ describe("utils.makeHalfPrice", () => {
     expect(utils.makeHalfPrice(100)).toBe(50);
   });
 });
+
+describe("utils.countBooks", () => {
+  test("returns 2 when given an array of 2 book titles", () => {
+    expect(utils.countBooks(["Fantastic Mr. Fox", "James and the Giant Peach"])).toBe(2);
+  });
+});
