@@ -10,8 +10,13 @@ function makeHalfPrice(price) {
     return price * 0.5;
 }
 
+function countBooks(books) {
+    return books.length;
+}
+
 module.exports = {
     addVAT,
     getFullName,
-    makeHalfPrice
+    makeHalfPrice,
+    countBooks
 };
