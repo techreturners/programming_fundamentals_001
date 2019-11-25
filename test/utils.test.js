@@ -13,3 +13,9 @@ describe("utils.addVAT", () => {
     expect(utils.addVAT(99)).toBe(118.8);
   });
 });
+
+describe("utils.getFullName", () => {
+  test("returns Haruki Murakami when passed Haruki and Murakami", () => {
+    expect(utils.getFullName("Haruki", "Murakami")).toBe("Haruki Murakami");
+  });
+});
