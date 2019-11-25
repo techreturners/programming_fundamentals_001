@@ -19,3 +19,9 @@ describe("utils.getFullName", () => {
     expect(utils.getFullName("Haruki", "Murakami")).toBe("Haruki Murakami");
   });
 });
+
+describe("utils.makeHalfPrice", () => {
+  test("returns £50 when price is £100", () => {
+    expect(utils.makeHalfPrice(100)).toBe(50);
+  });
+});
