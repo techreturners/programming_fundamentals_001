@@ -6,7 +6,12 @@ function getFullName(firstName, lastName) {
     return `${firstName} ${lastName}`;
 }
 
+function makeHalfPrice(price) {
+    return price * 0.5;
+}
+
 module.exports = {
     addVAT,
-    getFullName
+    getFullName,
+    makeHalfPrice
 };
